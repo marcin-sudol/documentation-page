@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="main.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="description" content="Documentation page for SQL" />
+    <meta name="keywords" content="SQL, documentation" />
+    <meta name="author" content="Marcin Sudoł" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SQL Documentation</title>
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header>SQL Documentation</header>
+
+      <ul>
+        <li>
+          <a href="#General_information" class="nav-link"
+            >General information</a
+          >
+        </li>
+        <li><a href="#DQL_statements" class="nav-link">DQL statements</a></li>
+        <li><a href="#DML_statements" class="nav-link">DML statements</a></li>
+        <li><a href="#DDL_statements" class="nav-link">DDL statements</a></li>
+        <li><a href="#DCL_statements" class="nav-link">DCL statements</a></li>
+        <li>
+          <a href="#SELECT_query_structure" class="nav-link"
+            >SELECT query structure</a
+          >
+        </li>
+        <li><a href="#FROM_clause" class="nav-link">FROM clause</a></li>
+        <li><a href="#Types_of_joins" class="nav-link">Types of joins</a></li>
+        <li><a href="#WHERE_clause" class="nav-link">WHERE clause</a></li>
+        <li><a href="#GROUP_BY_clause" class="nav-link">GROUP BY clause</a></li>
+        <li><a href="#HAVING_clause" class="nav-link">HAVING clause</a></li>
+        <li><a href="#SELECT_clause" class="nav-link">SELECT clause</a></li>
+        <li><a href="#ORDER_BY_clause" class="nav-link">ORDER BY clause</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section id="General_information" class="main-section">
+        <header>General information</header>
+
+        <article>
+          <p>
+            SQL stands for Structured Query Language. It's a language used in
+            relational databases. SQL commands can be divided into four groups:
+          </p>
+
+          <ul>
+            <li>DQL (Data Query Language) - for querying data</li>
+            <li>DML (Data Manipulation Language) - for modifying data</li>
+            <li>
+              DDL (Data Definition Language) - for creating and modifying
+              database objects
+            </li>
+            <li>DCL (Data Control Language) - for controling access to data</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="DQL_statements" class="main-section">
+        <header>DQL statements</header>
+
+        <article>
+          <p>There is only one statement used for querying the data:</p>
+
+          <ul>
+            <li><code>SELECT</code></li>
+          </ul>
+
+          <p>This statement can be complex and consist of many clauses.</p>
+
+          <p>Sometimes SELECT statement is considered as a part of DML.</p>
+        </article>
+      </section>
+
+      <section id="DML_statements" class="main-section">
+        <header>DML statements</header>
+
+        <article>
+          <p>DML consists of three statements:</p>
+
+          <ul>
+            <li><code>INSERT</code> - for inserting data into table</li>
+            <li><code>UPDATE</code> - for updating data in table</li>
+            <li><code>DELETE</code> - for deleting data from table</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="DDL_statements" class="main-section">
+        <header>DDL statements</header>
+
+        <article>
+          <p>Statements included in DDL:</p>
+
+          <ul>
+            <li>
+              <code>CREATE</code> - for creating objects like databases, tables,
+              indexes and other
+            </li>
+            <li><code>DROP</code> - for removing objects</li>
+            <li><code>ALTER</code> - for modifying existing objects</li>
+            <li><code>TRUNCATE</code> - for removing all data from table</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="DCL_statements" class="main-section">
+        <header>DCL statements</header>
+
+        <article>
+          <p>Statements included in DCL:</p>
+
+          <ul>
+            <li>
+              <code>GRAND</code> - for granting permission to perform specific
+              actions
+            </li>
+            <li>
+              <code>REVOKE</code> - for removing permission to perform specific
+              actions
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="SELECT_query_structure" class="main-section">
+        <header>SELECT query structure</header>
+
+        <article>
+          <p>SELECT statement consists of 6 clauses:</p>
+
+          <code class="code-block">
+            SELECT ...<br />
+            FROM ...<br />
+            WHERE ...<br />
+            GROUP BY ...<br />
+            HAVING ...<br />
+            ORDER BY ...
+          </code>
+
+          <p>Only SELECT and FROM clauses are mandatory.</p>
+
+          <p>Examples of SELECT statement:</p>
+
+          <code class="code-block"
+            >SELECT FirstName, LastName<br />
+            FROM Customers
+          </code>
+
+          <code class="code-block"
+            >SELECT ProductName<br />
+            FROM Products<br />
+            WHERE ProductCategoryID = 2<br />
+            ORDER BY ProductName
+          </code>
+        </article>
+      </section>
+
+      <section id="FROM_clause" class="main-section">
+        <header>FROM clause</header>
+
+        <article>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            pellentesque orci eu magna feugiat vestibulum. Praesent neque quam,
+            tincidunt quis arcu eu, placerat fermentum erat. Mauris quis purus
+            ut mauris fringilla auctor. Morbi sed metus non orci elementum
+            viverra. Etiam lacus purus, elementum sit amet elementum ut,
+            efficitur ac tortor. Nulla rutrum justo vitae sodales condimentum.
+            Nam ante ante, fermentum non ligula a, malesuada semper massa. Donec
+            eu augue hendrerit, condimentum ante non, tristique orci. Quisque
+            semper augue interdum felis varius rhoncus. Duis urna est, euismod
+            ac pretium vel, varius non ante. Integer nec porttitor nulla,
+            bibendum dapibus odio. Duis nibh elit, interdum ac imperdiet sed,
+            vulputate vel nunc. Cras aliquam velit vitae justo volutpat feugiat.
+          </p>
+        </article>
+      </section>
+
+      <section id="Types_of_joins" class="main-section">
+        <header>Types of joins</header>
+
+        <article>
+          <p>
+            Quisque id aliquet metus. Phasellus faucibus ultricies consequat.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            Quisque non vehicula elit. Sed luctus eros nec convallis pulvinar.
+            Integer molestie facilisis felis a volutpat. Nulla facilisi. Morbi
+            mauris tortor, dignissim vel erat gravida, vestibulum porttitor
+            diam. Proin sodales tempor erat nec sollicitudin. Cras vitae sodales
+            mi. In quis leo metus. Pellentesque ac nulla eget urna euismod
+            blandit ut ac eros.
+          </p>
+        </article>
+      </section>
+
+      <section id="WHERE_clause" class="main-section">
+        <header>WHERE clause</header>
+
+        <article>
+          <p>
+            Sed vel leo at nunc sagittis vulputate. Sed ac venenatis leo.
+            Pellentesque pharetra dui nunc, id tristique leo dictum pulvinar.
+            Vestibulum condimentum elit eget neque lacinia, eu blandit mi
+            lacinia. Nunc et neque in dolor tempus ultricies ac nec magna.
+            Maecenas tempor velit sit amet nibh placerat, imperdiet mattis lacus
+            viverra. Morbi interdum interdum suscipit. Pellentesque magna
+            ligula, varius et lacinia quis, dapibus nec dolor. Fusce lacinia
+            luctus magna, vitae eleifend ligula imperdiet eleifend.
+          </p>
+        </article>
+      </section>
+
+      <section id="GROUP_BY_clause" class="main-section">
+        <header>GROUP BY clause</header>
+
+        <article>
+          <p>
+            Mauris nec nisl ac ipsum gravida aliquam accumsan a purus. Quisque
+            est justo, condimentum accumsan vestibulum at, eleifend quis sapien.
+            Nunc euismod ante nec ligula aliquam posuere vitae quis tellus. Cras
+            in ligula lacinia, commodo neque sit amet, laoreet erat. Nunc eu
+            ullamcorper sem. Mauris ante nibh, suscipit quis pellentesque
+            imperdiet, iaculis nec nibh. Nullam leo nisi, bibendum sit amet
+            posuere et, posuere et turpis. Donec ultricies hendrerit accumsan.
+          </p>
+        </article>
+      </section>
+
+      <section id="HAVING_clause" class="main-section">
+        <header>HAVING clause</header>
+
+        <article>
+          <p>
+            Ut lobortis non quam lacinia convallis. Nulla viverra euismod velit,
+            non ornare felis faucibus sed. Nullam sit amet turpis sit amet nulla
+            laoreet bibendum. Proin dolor tellus, luctus a metus eu, euismod
+            varius urna. Morbi rutrum mi ut velit scelerisque venenatis.
+            Phasellus viverra aliquet luctus. In ut dictum massa, ut lobortis
+            nisi. Aenean semper magna ut placerat consectetur. Donec
+            pellentesque convallis justo, sed congue lectus maximus a. Praesent
+            quis mi lorem. Ut ullamcorper arcu et ante posuere vehicula.
+            Phasellus iaculis nulla vel feugiat accumsan. Orci varius natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          </p>
+        </article>
+      </section>
+
+      <section id="SELECT_clause" class="main-section">
+        <header>SELECT clause</header>
+
+        <article>
+          <p>
+            Proin neque dolor, interdum in neque vel, gravida commodo velit. Ut
+            dapibus ex turpis, ut hendrerit nulla ultricies ac. Sed eu ornare
+            eros. Donec vitae velit nec felis venenatis accumsan nec ac risus.
+            Donec tempor non dolor sit amet viverra. Maecenas sed erat id purus
+            dictum tristique vitae eu nibh. Curabitur dignissim non quam ut
+            varius. Nulla a eros nibh. In enim lorem, commodo tristique magna
+            accumsan, viverra commodo sapien. Vivamus dictum eu odio eu
+            tristique. Pellentesque quis vestibulum ante. Vestibulum hendrerit
+            risus nec sodales rhoncus. Nunc nisl lorem, laoreet eu semper sit
+            amet, ornare quis ligula. Nam eleifend eleifend tincidunt. Maecenas
+            dictum id velit vel tincidunt. Phasellus at venenatis diam.
+          </p>
+        </article>
+      </section>
+
+      <section id="ORDER_BY_clause" class="main-section">
+        <header>ORDER BY clause</header>
+
+        <article>
+          <p>
+            Cras sed eleifend metus. Nullam vulputate, turpis non pellentesque
+            semper, massa nisl lobortis neque, sit amet efficitur velit sem eu
+            est. Vestibulum at viverra tortor. Integer ac ipsum dignissim,
+            molestie nibh a, vulputate libero. Fusce feugiat metus nec erat
+            fermentum auctor. Nam eget sem aliquam, egestas quam a, egestas
+            nisl. Ut non neque non dolor egestas tempus.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
